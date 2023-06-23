@@ -8,16 +8,16 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-class FilteredImage extends StatefulWidget {
+class FilteredImageScreen extends StatefulWidget {
   final List<Uint8List> imageData;
 
-  const FilteredImage({Key? key, required this.imageData}) : super(key: key);
+  const FilteredImageScreen({Key? key, required this.imageData}) : super(key: key);
 
   @override
-  State<FilteredImage> createState() => _FilteredImageState();
+  State<FilteredImageScreen> createState() => _FilteredImageScreenState();
 }
 
-class _FilteredImageState extends State<FilteredImage> {
+class _FilteredImageScreenState extends State<FilteredImageScreen> {
   PermissionStatus _storagePermissionStatus = PermissionStatus.denied;
 
   @override

@@ -44,7 +44,7 @@ class _ImageFilterScreenState extends State<ImageFilterScreen> {
                 visible: imageFileList!.length > 0,
                 child: ElevatedButton(
                   onPressed: () {
-                    Get.to(() => ImageFilerScreen2(
+                    Get.to(() => ImageEditingScreen(
                           imageFileList: imageFileList!,
                         ));
                   },
@@ -63,14 +63,14 @@ class _ImageFilterScreenState extends State<ImageFilterScreen> {
                   imageFileList!.length,
                   (index) => Container(
                         margin: EdgeInsets.all(10),
-                        color: Colors.red,
+                        // color: Colors.red,
                         height: 0.4.sw,
-                        width: 0.3.sw,
+                        width: 0.4.sw,
                         child: Stack(
                           children: [
                             Image.file(
-                              // height: 0.5.sw,
-                              width: 0.5.sw,
+                              height: 0.4.sw,
+                              width: 0.4.sw,
                               File(imageFileList![index].path),
                               fit: BoxFit.cover,
                             ),
